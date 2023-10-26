@@ -22,6 +22,17 @@ a:hover{
     opacity: 0.8;
 }
 
+.sr-only{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 /* ヘッダー */
 .site{
     display: flex;
@@ -41,4 +52,13 @@ a:hover{
     color: #707f89;
     font-size: 10px;
     line-height: 1.4;
+}
+
+/* ナビゲーションボタン */
+.nav-button{
+    box-sizing: content-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
 }
