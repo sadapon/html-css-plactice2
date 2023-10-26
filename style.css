@@ -1,32 +1,49 @@
 @charset "UTF-8";
 
 /* 基本 */
-body{
+body {
     font-family: 'Noto Sans JP', sans-serif;
 }
-.container{
+
+.container {
     width: 84%;
     margin: 0 auto;
 }
+@media(min-width: 900px) {
+    .container {
+        width: 91%;
+        max-width: 1240px;
+    }
+}
+
 
 /* リセット */
-body, h1, h2, h3, h4, h5, h6, p, ul, figure{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
     margin: 0;
     padding: 0;
 }
 
 
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     opacity: 0.8;
 }
 
-.sr-only{
+.sr-only {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -38,34 +55,59 @@ a:hover{
 }
 
 /* ヘッダー */
-.header .container{
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 74px;
 }
-.site{
+
+@media(min-width: 900px) {
+    .header .container {
+        height: 100px;
+    }
+}
+
+.site {
     display: flex;
     align-items: center;
 }
-.site img{
+
+.site img {
     width: 42px;
     margin-right: 10px;
 }
-.site .corp{
+
+.site .corp {
     color: #333333;
     font-size: 12px;
     font-weight: 900;
     line-height: 1.4;
 }
-.site .desc{
+
+.site .desc {
     color: #707f89;
     font-size: 10px;
     line-height: 1.4;
 }
 
+@media(min-width: 900px){
+    .site img{
+        width: 59px;
+        margin-right: 18px;
+    }
+
+    .site .corp{
+        font-size: 20px;
+    }
+
+    .site .desc{
+        font-size: 12px;
+    }
+}
+
 /* ナビゲーションボタン */
-.nav-button{
+.nav-button {
     box-sizing: content-box;
     padding: 0;
     outline: none;
@@ -78,14 +120,15 @@ a:hover{
 }
 
 .nav-button::before,
-.nav-button::after{
+.nav-button::after {
     content: '';
     display: block;
     height: 2px;
     background-color: currentColor;
     transform: translateY(5px);
 }
-.nav-button::before{
+
+.nav-button::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
 }
