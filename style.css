@@ -61,4 +61,21 @@ a:hover{
     outline: none;
     border: none;
     background: none;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    color: #2e5180;
+}
+
+.nav-button::before,
+.nav-button::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(5px);
+}
+.nav-button::before{
+    transform: translateY(-5px);
+    box-shadow: 0 6px currentColor;
 }
