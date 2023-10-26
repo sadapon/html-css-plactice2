@@ -19,3 +19,24 @@ a{
 a:hover{
     opacity: 0.8;
 }
+
+/* ヘッダー */
+.site{
+    display: flex;
+    align-items: center;
+}
+.site img{
+    width: 42px;
+    margin-right: 10px;
+}
+.site .corp{
+    color: #333333;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+.site .desc{
+    color: #707f89;
+    font-size: 10px;
+    line-height: 1.4;
+}
