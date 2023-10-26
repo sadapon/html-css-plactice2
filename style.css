@@ -4,6 +4,10 @@
 body{
     font-family: 'Noto Sans JP', sans-serif;
 }
+.container{
+    width: 84%;
+    margin: 0 auto;
+}
 
 /* リセット */
 body, h1, h2, h3, h4, h5, h6, p, ul, figure{
@@ -34,6 +38,12 @@ a:hover{
 }
 
 /* ヘッダー */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+}
 .site{
     display: flex;
     align-items: center;
