@@ -139,6 +139,13 @@ a:hover {
     background-image: url(img/hero.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+}
+.hero .catch{
+    flex: auto;
+    align-self: flex-end;
+    padding: 33px 0;
+    background-color: rgba(255, 255, 255, 0.76);
 }
 .hero img{
     max-width: 100%;
