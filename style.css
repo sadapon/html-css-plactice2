@@ -132,3 +132,11 @@ a:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
 }
+
+/* ヒーロー */
+.hero{
+    height: 400px;
+    background-image: url(img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
